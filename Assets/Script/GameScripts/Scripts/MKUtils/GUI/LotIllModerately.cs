@@ -79,9 +79,9 @@ namespace Mkey
         public LotIllModerately LiablePurely()
         {
 #if UNITY_EDITOR
-            if (MRat && !IDFatalScreen()) return MRat.ShowPopUp(this);
+            if (MRat && !IDFatalScreen()) return MRat.KnotLotOf(this);
 #else
-            if (MRat) return MRat.ShowPopUp(this);
+            if (MRat) return MRat.KnotLotOf(this);
 #endif
             else return null;
         }
@@ -91,7 +91,7 @@ namespace Mkey
 #if UNITY_EDITOR
             if (MRat && !IDFatalScreen())
             {
-                LotIllModerately pu = MRat.ShowPopUp(this);
+                LotIllModerately pu = MRat.KnotLotOf(this);
                 if (closeTime > 0 && pu)
                 {
                     pu.DodgePurely(closeTime);
@@ -100,7 +100,7 @@ namespace Mkey
 #else
             if (MRat)
             {
-                LotIllModerately pu = MRat.ShowPopUp(this);
+                LotIllModerately pu = MRat.KnotLotOf(this);
                 if (closeTime > 0 && pu)
                 {
                     pu.DodgePurely(closeTime);
