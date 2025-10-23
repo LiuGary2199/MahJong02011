@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: e49eb57d807c03647be5c37d33b3cc96
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307235
+  packageName: MK - Grand Mahjong Game
+  packageVersion: 1.0
+  assetPath: Assets/Mahjong/Scripts/GameScripts/MatchGridRenderer.cs
+  uploadId: 722904

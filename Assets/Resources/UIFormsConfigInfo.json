@@ -1,0 +1,79 @@
+{
+  "ConfigInfo": [
+    {
+      "Key": "本配置文件说明"
+    },
+    {
+      "Key": "MainDwarf",
+      "Value": "UIPanel\\MainDwarf"
+    },
+    {
+      "Key": "AdjunctDwarf",
+      "Value": "UIPanel\\AdjunctDwarf"
+    },
+    {
+      "Key": "Allay",
+      "Value": "UIPanel\\Common\\Allay"
+    },
+    {
+      "Key": "CollectEffect",
+      "Value": "UIPanel\\Common\\CollectEffect"
+    },
+    {
+      "Key": "DeltaGasolineDwarf",
+      "Value": "UIPanel\\DeltaGasolineDwarf"
+    },
+    {
+        "Key": "CashOutPanel",
+        "Value": "UIPanel\\CashOutPanel"
+    },
+    {
+      "Key": "LastGoDwarf",
+      "Value": "UIPanel\\LastGoDwarf"
+    },
+    {
+      "Key": "DailyGiftPanel",
+      "Value": "UIPanel\\DailyGift\\DailyGiftPanel"
+    },
+    {
+      "Key": "RemoveAdPanel",
+      "Value": "UIPanel\\RemoveAd\\RemoveAdPanel"
+    },
+    {
+      "Key": "EndlessTreasurePanel",
+      "Value": "UIPanel\\EndlessTreasure\\EndlessTreasurePanel"
+    },
+    {
+      "Key": "RankStarPanel",
+      "Value": "UIPanel\\RankStar\\RankStarPanel"
+    },
+    {
+      "Key": "RewardPanel",
+      "Value": "UIPanel\\RewardPanel\\RewardPanel"
+    },
+    {
+      "Key": "NssTrayPriceDwarf",
+      "Value": "UIPanel\\NssTrayPriceDwarf"
+    },
+    {
+      "Key": "AdManagerTestPanel",
+      "Value": "UIPanel\\Test\\AdManagerTestPanel"
+    },
+    {
+      "Key": "ShrillAway",
+      "Value": "UIPanel\\ShrillAway"
+    },
+    {
+      "Key": "GreeceHotDwarf",
+      "Value": "UIPanel\\GreeceHotDwarf"
+    },
+    {
+      "Key": "SlitGreece",
+      "Value": "UIPanel\\SlitGreece"
+    },
+    {
+      "Key": "NotGrand",
+      "Value": "UIPanel\\NotGrand"
+    }
+  ]
+}

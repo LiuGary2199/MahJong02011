@@ -1,0 +1,82 @@
+import os
+import re
+
+def find_asset_files(root_dir):
+    """查找指定目录下所有的.asset文件（包括子目录）"""
+    asset_files = []
+    for dirpath, _, filenames in os.walk(root_dir):
+        for filename in filenames:
+            if filename.endswith('.asset'):
+                asset_files.append(os.path.join(dirpath, filename))
+    return asset_files
+
+def extract_cells_content(file_path):
+    """从.asset文件中提取cells部分的内容"""
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read()
+        
+        # 正则表达式匹配cells部分
+        # 匹配以cells:开头，直到下一个不以空格或-开头的行（即下一个顶级字段）
+        pattern = r'(cells:\s+- row:.*?)(?=\s*\w+:)'
+        match = re.search(pattern, content, re.DOTALL)
+        
+        if match:
+            return match.group(1)
+        return None
+    except Exception as e:
+        print(f"提取{file_path}的cells内容失败: {e}")
+        return None
+
+def replace_cells_content(original_path, reference_cells):
+    """用参照的cells内容替换原始文件的cells内容"""
+    try:
+        with open(original_path, 'r', encoding='utf-8', errors='ignore') as f:
+            content = f.read()
+        
+        # 替换cells部分
+        pattern = r'(cells:\s+- row:.*?)(?=\s*\w+:)'
+        new_content = re.sub(pattern, reference_cells, content, flags=re.DOTALL)
+        
+        # 写回文件
+        with open(original_path, 'w', encoding='utf-8', errors='ignore') as f:
+            f.write(new_content)
+        
+        print(f"已成功替换 {os.path.basename(original_path)} 的cells内容")
+        return True
+    except Exception as e:
+        print(f"替换{original_path}的cells内容失败: {e}")
+        return False
+
+def main():
+    # 文件夹路径
+    modified_root = r"D:\YFAX\Project\MahJong\Assets\Resources\LevelConstructSets"  # 被改文件夹
+    reference_root = r"D:\YFAX\TempProject\MahJongTemp\Assets\Resources\LevelConstructSets"  # 参照文件夹
+    
+    # 获取所有.asset文件
+    modified_files = find_asset_files(modified_root)
+    reference_files = find_asset_files(reference_root)
+    
+    # 建立参照文件的文件名到路径的映射
+    reference_filename_map = {os.path.basename(path): path for path in reference_files}
+    
+    # 处理每个被改文件
+    for modified_path in modified_files:
+        filename = os.path.basename(modified_path)
+        
+        # 检查是否有对应的参照文件
+        if filename in reference_filename_map:
+            reference_path = reference_filename_map[filename]
+            
+            # 提取参照文件的cells内容
+            reference_cells = extract_cells_content(reference_path)
+            if reference_cells:
+                # 替换被改文件的cells内容
+                replace_cells_content(modified_path, reference_cells)
+            else:
+                print(f"在参照文件 {filename} 中未找到有效的cells内容，跳过替换")
+        else:
+            print(f"未找到 {filename} 对应的参照文件，跳过")
+
+if __name__ == "__main__":
+    main()

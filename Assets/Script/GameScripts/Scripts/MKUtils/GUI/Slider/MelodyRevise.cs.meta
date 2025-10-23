@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b0a3d489fe1014142a3a12d68c624dbc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307235
+  packageName: MK - Grand Mahjong Game
+  packageVersion: 1.0
+  assetPath: Assets/Mahjong/Scripts/MKUtils/GUI/Slider/SimpleSlider.cs
+  uploadId: 722904

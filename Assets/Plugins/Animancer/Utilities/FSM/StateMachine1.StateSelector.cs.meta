@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cabbbe2cd1e0ded4f91a41d62b124b1e
+labels:
+- FSM
+- FiniteStateMachine
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

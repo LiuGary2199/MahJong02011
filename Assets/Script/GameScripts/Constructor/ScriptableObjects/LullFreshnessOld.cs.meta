@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: acaca7cbbeae1e34784479de69581225
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 20
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307235
+  packageName: MK - Grand Mahjong Game
+  packageVersion: 1.0
+  assetPath: Assets/Mahjong/Scripts/GameScripts/Constructor/ScriptableObjects/GameConstructSet.cs
+  uploadId: 722904

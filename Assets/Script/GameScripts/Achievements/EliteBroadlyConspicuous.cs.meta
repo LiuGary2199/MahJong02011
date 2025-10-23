@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 48261e3a8cb0e5b41930ffe8155f7a9e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 307235
+  packageName: MK - Grand Mahjong Game
+  packageVersion: 1.0
+  assetPath: Assets/Mahjong/Scripts/GameScripts/Achievements/MatchSpritesAchievement.cs
+  uploadId: 722904
