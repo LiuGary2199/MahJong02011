@@ -42,25 +42,26 @@ using System.Collections;
 */
 namespace Mkey
 {
-    public enum WinAnimType {AlphaFade, Move, Scale}
+    public enum WinAnimType { AlphaFade, Move, Scale }
 
-    public enum Position {LeftMiddleOut, RightMiddleOut, MiddleBottomOut, MiddleTopOut, LeftMiddleIn, RightMiddleIn, MiddleBottomIn, MiddleTopIn, CustomPosition, AsIs, Center}
+    public enum Position { LeftMiddleOut, RightMiddleOut, MiddleBottomOut, MiddleTopOut, LeftMiddleIn, RightMiddleIn, MiddleBottomIn, MiddleTopIn, CustomPosition, AsIs, Center }
 
-    public enum ScaleType {CenterXY, CenterX, CenterY, Top, Bottom, Left, Right}
+    public enum ScaleType { CenterXY, CenterX, CenterY, Top, Bottom, Left, Right }
 
 
 
     [RequireComponent(typeof(RatHatch_v2))]
     public class LotIllModerately : MonoBehaviour
     {
-[UnityEngine.Serialization.FormerlySerializedAs("Information")]        public string Information;
+        [UnityEngine.Serialization.FormerlySerializedAs("Information")] public string Information;
 
-        public bool IDSeveral        {
+        public bool IDSeveral
+        {
             get; private set;
         }
         private Action<LotIllModerately> YorkAnvil;
         private Action<LotIllModerately> DodgeAnvil;
-        private MediaMuscle Media{ get { return MediaMuscle.Whatever; } }
+        private MediaMuscle Media { get { return MediaMuscle.Whatever; } }
         [SerializeField]
         private AudioClip ThusMine;
         [SerializeField]
@@ -70,15 +71,15 @@ namespace Mkey
         [SerializeField]
         private bool TillDodge;
 
-        private bool Cling= false; // avoid double closing
-        private bool Thus= false; // avoid double opening
+        private bool Cling = false; // avoid double closing
+        private bool Thus = false; // avoid double opening
 
-        private RatModerately MRat=> RatModerately.Instance;
+        private RatModerately MRat => RatModerately.Instance;
 
         public LotIllModerately LiablePurely()
         {
 #if UNITY_EDITOR
-            if (MRat && !IDFatalScreen()) return MRat.KnotLotOf(this);
+            if (MRat && !IDFatalScreen()) return MRat.ShowPopUp(this);
 #else
             if (MRat) return MRat.ShowPopUp(this);
 #endif
@@ -90,7 +91,7 @@ namespace Mkey
 #if UNITY_EDITOR
             if (MRat && !IDFatalScreen())
             {
-                LotIllModerately pu = MRat.KnotLotOf(this);
+                LotIllModerately pu = MRat.ShowPopUp(this);
                 if (closeTime > 0 && pu)
                 {
                     pu.DodgePurely(closeTime);
@@ -242,10 +243,10 @@ namespace Mkey
             bool res = false;
 
 #if UNITY_EDITOR
-            UnityEditor.PrefabInstanceStatus st =  UnityEditor.PrefabUtility.GetPrefabInstanceStatus(this);//https://forum.unity.com/threads/test-if-prefab-is-an-instance.562900/
+            UnityEditor.PrefabInstanceStatus st = UnityEditor.PrefabUtility.GetPrefabInstanceStatus(this);//https://forum.unity.com/threads/test-if-prefab-is-an-instance.562900/
             UnityEditor.PrefabAssetType prefabType = UnityEditor.PrefabUtility.GetPrefabAssetType(this);
 
-            if ( prefabType == UnityEditor.PrefabAssetType.NotAPrefab)
+            if (prefabType == UnityEditor.PrefabAssetType.NotAPrefab)
             {
                 // Debug.Log("not a prefab");
                 res = true;
@@ -259,7 +260,7 @@ namespace Mkey
             return res;
         }
 
-#region utils
+        #region utils
         public void OldPityCoyote(Text text, string textString)
         {
             if (text)
@@ -275,7 +276,7 @@ namespace Mkey
                 image.sprite = sprite;
             }
         }
-#endregion utils
+        #endregion utils
     }
 
     [Serializable]
@@ -333,7 +334,7 @@ namespace Mkey
     }
 
     [Serializable]
-    public class FadeAnim 
+    public class FadeAnim
     {
         public float Fall;
         public FadeAnim()
@@ -343,7 +344,7 @@ namespace Mkey
     }
 
     [Serializable]
-    public class MoveAnim 
+    public class MoveAnim
     {
         public Position toSynapsis;
         public float Fall;
@@ -358,7 +359,7 @@ namespace Mkey
     }
 
     [Serializable]
-    public class ScaleAnim 
+    public class ScaleAnim
     {
         public ScaleType ClimbLieu;
         public float Fall;
