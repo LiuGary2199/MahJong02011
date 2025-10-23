@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections;
@@ -80,7 +80,7 @@ namespace Mkey
 #if UNITY_EDITOR
             if (MRat && !IDFatalScreen()) return MRat.KnotLotOf(this);
 #else
-            if (MGui) return MGui.ShowPopUp(this);
+            if (MRat) return MRat.ShowPopUp(this);
 #endif
             else return null;
         }
@@ -97,12 +97,12 @@ namespace Mkey
                 }
             }
 #else
-            if (MGui)
+            if (MRat)
             {
-                LotIllModerately pu = MGui.ShowPopUp(this);
+                LotIllModerately pu = MRat.ShowPopUp(this);
                 if (closeTime > 0 && pu)
                 {
-                    pu.CloseWindow(closeTime);
+                    pu.DodgePurely(closeTime);
                 }
             }
 #endif

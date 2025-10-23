@@ -1,4 +1,4 @@
-﻿using System.Runtime.InteropServices;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class LastGoEvening : MonoBehaviour
@@ -22,7 +22,7 @@ public class LastGoEvening : MonoBehaviour
 #if UNITY_ANDROID || UNITY_EDITOR
         Application.OpenURL("market://details?id=" + Decor);
 #elif UNITY_IOS
-        openRateUsUrl(appid);
+        openRateUsUrl(Decor);
 #endif
     }
 }

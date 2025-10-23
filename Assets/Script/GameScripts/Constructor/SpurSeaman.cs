@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Mkey
@@ -45,9 +45,9 @@ namespace Mkey
                 });
             }
 #else
-           if (modeButton) modeButton.gameObject.SetActive(false); 
+           if (GustSeaman) GustSeaman.gameObject.SetActive(false); 
 #endif
-        // modeButton.gameObject.SetActive(false);
+            // GustSeaman.gameObject.SetActive(false);
         }
 
         /// <summary>
