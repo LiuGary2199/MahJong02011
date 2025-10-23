@@ -66,7 +66,7 @@ public class MaxSdkAndroid : MaxSdkBase
     /// <summary>
     /// Set the <see cref="MaxSegmentCollection"/>.
     /// </summary>
-    /// <param name="segmentCollection"> The segment Reasonable to be set. Must not be {@code null}</param>
+    /// <param name="segmentCollection"> The segment collection to be set. Must not be {@code null}</param>
     public static void SetSegmentCollection(MaxSegmentCollection segmentCollection)
     {
         MaxUnityPluginClass.CallStatic("setSegmentCollection", JsonUtility.ToJson(segmentCollection));

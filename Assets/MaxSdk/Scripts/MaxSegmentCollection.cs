@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// This class contains a Reasonable of <see cref="MaxSegment"/> objects.
+/// This class contains a collection of <see cref="MaxSegment"/> objects.
 /// </summary>
 [Serializable]
 public class MaxSegmentCollection
@@ -36,7 +36,7 @@ public class MaxSegmentCollection
         internal MaxSegmentCollectionBuilder() { }
 
         /// <summary>
-        /// Adds a MaxSegment to the Reasonable.
+        /// Adds a MaxSegment to the collection.
         /// </summary>
         /// <param name="segment">The MaxSegment to add.</param>
         /// <returns>The MaxSegmentCollectionBuilder instance for chaining.</returns>
