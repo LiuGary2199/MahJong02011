@@ -1388,8 +1388,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 9101460039834577635}
-        m_TargetAssemblyTypeName: Mkey.ShuffleHelper, Assembly-CSharp
-        m_MethodName: Shuffle_click
+        m_TargetAssemblyTypeName: Mkey.SeminarInsert, Assembly-CSharp
+        m_MethodName: Seminar_Stuff
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1419,9 +1419,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5127914701973013420}
-        m_TargetAssemblyTypeName: Mkey.OutText, Assembly-CSharp
-        m_MethodName: IntToText
-        m_Mode: 0
+        m_TargetAssemblyTypeName: Mkey.ItsPity, Assembly-CSharp
+        m_MethodName: GasDyPity
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1440,9 +1440,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5127914701973013420}
-        m_TargetAssemblyTypeName: Mkey.OutText, Assembly-CSharp
-        m_MethodName: IntToText
-        m_Mode: 0
+        m_TargetAssemblyTypeName: Mkey.ItsPity, Assembly-CSharp
+        m_MethodName: GasDyPity
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1457,7 +1457,7 @@ MonoBehaviour:
   VanVaultAnvil:
     m_PersistentCalls:
       m_Calls: []
-  SeminarMisery: {fileID: 0}
+  SeminarMisery: {fileID: 11400000, guid: 6fff06ffe41d04446b17968557a02968, type: 2}
 --- !u!1 &1304118090571646284
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,8 +3670,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 163674547207803653}
-        m_TargetAssemblyTypeName: Mkey.HintHelper, Assembly-CSharp
-        m_MethodName: Select_Hint
+        m_TargetAssemblyTypeName: Mkey.PackInsert, Assembly-CSharp
+        m_MethodName: Eleven_Pack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3701,9 +3701,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7071381760586011929}
-        m_TargetAssemblyTypeName: Mkey.OutText, Assembly-CSharp
-        m_MethodName: IntToText
-        m_Mode: 0
+        m_TargetAssemblyTypeName: Mkey.ItsPity, Assembly-CSharp
+        m_MethodName: GasDyPity
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3722,9 +3722,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7071381760586011929}
-        m_TargetAssemblyTypeName: Mkey.OutText, Assembly-CSharp
-        m_MethodName: IntToText
-        m_Mode: 0
+        m_TargetAssemblyTypeName: Mkey.ItsPity, Assembly-CSharp
+        m_MethodName: GasDyPity
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3739,7 +3739,7 @@ MonoBehaviour:
   VanVaultAnvil:
     m_PersistentCalls:
       m_Calls: []
-  PackMisery: {fileID: 0}
+  PackMisery: {fileID: 11400000, guid: 8768a67e4c961aa4c928d85306c6281d, type: 2}
 --- !u!1 &5385779650568539334
 GameObject:
   m_ObjectHideFlags: 0
