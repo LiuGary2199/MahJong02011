@@ -19,7 +19,7 @@ MonoBehaviour:
   FewSalt: 14
   TestX: 0
   TestY: 0
-  Climb: 1.7
+  Climb: 0.7
   WashAbsorbGallop: 0
   cells:
   - row: 1
