@@ -252,7 +252,7 @@ namespace Mkey
                 {
                     HighlihtBold(highlight);
                 };
-                HighlihtBold(true);
+                //HighlihtBold(true);
                 #endregion set board eventhandlers
                 BookSoda.RateCoconut();
 
@@ -1216,16 +1216,16 @@ namespace Mkey
 
         public void OldMilkweedBoldSpur(bool highlight)
         {
-            if (IDHeartbeatBoldSpur == highlight) return;
-            UntoldGramaSubsidize.OldTape("free_highlight", false);
-            IDHeartbeatBoldSpur = false;
+         //   if (IDHeartbeatBoldSpur == highlight) return;
+            UntoldGramaSubsidize.OldTape("free_highlight", true);
+            IDHeartbeatBoldSpur = true;
             HaliteBoldMilkweedSpurEndear?.Invoke(true);
         }
 
         private void WideDeveloperSpur()
         {
-            bool isFreeHihglighted = UntoldGramaSubsidize.HowTape("free_highlight", false);
-            OldMilkweedBoldSpur(false);
+            bool isFreeHihglighted = UntoldGramaSubsidize.HowTape("free_highlight", true);
+            OldMilkweedBoldSpur(true);
         }
 
         private void HighlihtBold(bool highlight)

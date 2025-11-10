@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Lofelt.NiceVibrations;
@@ -545,11 +545,11 @@ namespace Mkey
         /// </summary>
         internal void OldBoldMilkweedSouth(bool highLight)
         {
-            //SWestward.color = highLight ? Color.white : new Color(0.88f, 0.88f, 0.88f, 1);
-            //if (leftBorder) leftBorder.color = highLight ? Color.white : new Color(0.88f, 0.88f, 0.88f, 1);
+           SWestward.color = highLight ? Color.white : new Color(0.56f, 0.56f, 0.56f, 1);
+            if (GushDuring) GushDuring.color = highLight ? Color.white : new Color(0.56f, 0.56f, 0.56f, 1);
 
-            SWestward.color = highLight ? Color.white : Color.white;
-            if (GushDuring) GushDuring.color = highLight ? Color.white : Color.white;
+            //SWestward.color = highLight ? Color.white : Color.white;
+            //if (GushDuring) GushDuring.color = highLight ? Color.white : Color.white;
         }
         // #endregion highlight
 
